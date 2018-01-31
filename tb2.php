@@ -1,7 +1,6 @@
  <?php 
 $message = file_get_contents("php://input");
 $arrayMessage = json_decode($message, true);
-$token = "488160773:AAGaJteXSdE6jrVBpojW2PvRtt73Vn9fY9M";
 $chat_id = $arrayMessage['message']['from']['id'];
 $command = $arrayMessage['message']['text'];
  
